@@ -10,10 +10,6 @@
 	<title>Darkserver1.github.io</title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
-	<!-- <link rel="stylesheet" href="http://nativedroid.godesign.ch/demo/css/jquerymobile.nativedroid.css" />
-	<link rel="stylesheet" href="http://nativedroid.godesign.ch/demo/css/jquerymobile.nativedroid.dark.css" id='jQMnDTheme' />
-	<link rel="stylesheet" href="http://nativedroid.godesign.ch/demo/css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' /> -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 	<link rel="stylesheet" href="custom.css"/>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -24,31 +20,31 @@
 	</script>
   </head>
   <body>
-	
-	<div data-role="page" id="construction">
+	<!--
+	<div data-role="page" data-theme="a" id="construction">
 
 	  <div data-role="body" class="ui-content">
 
 		<span class="fa fa-exclamation-triangle fa-lg">Darkserver1.github.io is undergoing renovations, please check back later.</span>
 
-	  </div> <!-- /content-->
+	  </div>
 
-	</div> <!-- /page-->
-	
-	<div data-role="page" id="home">
+	</div>
+	-->
+	<div data-role="page" data-theme="a" id="home">
 	  
 	  <div data-role="panel" data-position="left" data-display="overlay" id="leftPanel" data-position="fixed">
 		<a class="ui-btn ui-corner-all ui-shadow" href="#home" data-transition="flip">Home</a>
 	  </div> <!-- /panel-->
 	  
-	  <div data-role="header" data-position="fixed">
+	  <div data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h3>Home</h3>
-		<a class="ui-btn ui-btn-icon-left ui-icon-grid" href="#leftPanel">Menu</a>
+		<a href='#leftPanel' data-role='button' data-icon='grid' data-iconpos='left' data-inline='true' data-shadow="true">Menu</a>
 	  </div> <!-- /header-->
 	  
 	  <div data-role="body" id="content" class="ui-content">
 		
-		<h3 class="ui-bar ui-bar-a ui-shadow ui-corner-all">News: May 23, 2015</h3>
+		<h3 class="ui-bar ui-bar-inherit ui-shadow ui-corner-all">News: May 23, 2015</h3>
 		<div class="ui-body">
 		  <span class="pull-left fa fa-newspaper-o fa-3x fa-border"></span>
           <p>Darkserver1.github.io is launched!</p>
@@ -60,7 +56,7 @@
 	  
 	</div> <!-- /page-->
 	
-	<div data-role="page" id="aboutme">
+	<div data-role="page" data-theme="a" id="aboutme">
 	  
 	  <div data-role="header" data-position="fixed">
 		<h3>About Me</h3>
