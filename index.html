@@ -13,33 +13,20 @@
 	<link rel="stylesheet" href="custom.css"/>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script>
-	  $(document).on("swiperight",function(){
-	    $("#leftPanel").panel("open");
-	  });
-	</script>
   </head>
   <body>
-	<!--
-	<div data-role="page" data-theme="a" id="construction">
-
-	  <div data-role="body" class="ui-content">
-
-		<span class="fa fa-exclamation-triangle fa-lg">Darkserver1.github.io is undergoing renovations, please check back later.</span>
-
-	  </div>
-
-	</div>
-	-->
 	<div data-role="page" data-theme="a" id="home">
 	  
-	  <div data-role="panel" data-position="left" data-display="overlay" id="leftPanel" data-position="fixed">
-		<a class="ui-btn ui-corner-all ui-shadow" href="#home" data-transition="flip">Home</a>
+	  <div data-role="panel" data-position="left" data-display="overlay" id="homepanel" data-position="fixed">
+		<a class="ui-btn ui-corner-all ui-shadow" href="#home">Home</a>
+		<a class="ui-btn ui-corner-all ui-shadow" href="#aboutme">About Me</a>
+		<a class="ui-btn ui-corner-all ui-shadow" href="#blog">Blog</a>
+		
 	  </div> <!-- /panel-->
 	  
 	  <div data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h3>Home</h3>
-		<a href='#leftPanel' data-role='button' data-icon='grid' data-iconpos='left' data-inline='true' data-shadow="true">Menu</a>
+		<a href='#homepanel' class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-left ui-shadow ui-corner-all">Menu</a>
 	  </div> <!-- /header-->
 	  
 	  <div data-role="body" id="content" class="ui-content">
@@ -50,7 +37,7 @@
           <p>Darkserver1.github.io is launched!</p>
 		</div>
 		<a href="#aboutme" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">About Me Page</a>
-		<a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">Blogs</a>
+		<a href="#blog" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">Blogs</a>
 		
 	  </div> <!-- /content-->
 	  
@@ -58,20 +45,41 @@
 	
 	<div data-role="page" data-theme="a" id="aboutme">
 	  
-	  <div data-role="header" data-position="fixed">
+	  <div data-role="panel" data-position="left" data-display="overlay" id="aboutpanel" data-position="fixed">
+		<a class="ui-btn ui-corner-all ui-shadow" href="#home">Home</a>
+		<a class="ui-btn ui-corner-all ui-shadow" href="#aboutme">About Me</a>
+		<a class="ui-btn ui-corner-all ui-shadow" href="#blog">Blog</a>
+		
+	  </div> <!-- /panel-->
+
+	  <div data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h3>About Me</h3>
-		<a class="ui-btn ui-btn-icon-left ui-icon-grid" href="#leftPanel">Menu</a>
-	  </div><!-- /header-->
+		<a href='#aboutpanel' class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-left ui-shadow ui-corner-all">Menu</a>
+	  </div> <!-- /header-->
 	  
 	  <div data-role="main" class="ui-content">
 		
-		<a class="fa fa-twitter fa-5x fa-border" href="https://twitter.com/pierce_manasseh" target="_blank"></a>
-		<br/>
-		<a class="fa fa-github fa-5x fa-border" href="https://github.com/darkserver1" target="_blank"></a>
-		<br/>
+		<h3 class="ui-bar ui-bar-inherit ui-shadow ui-corner-all">
+		  <span class="fa fa-twitter fa-lg"></span> Twitter
+		</h3>
+		<div class="ui-body">
+		  <p>This is my twitter account, where I post minecraft, and other random things.</p>
+		  <a href="https://twitter.com/pierce_manasseh" target="_blank">@pierce_manasseh</a>
+		</div>
+		<h3 class="ui-bar ui-bar-inherit ui-shadow ui-corner-all">
+		  <span class="fa fa-github fa-lg"></span> Github
+		</h3>
+		<div class="ui-body">
+		  <p>This is my Github, where this webpage is hosted from, and where I put my coding.</p>
+		  <a href="https://github.com/darkserver1" target="_blank">Github Darkserver1</a>
+		</div>
+		
 	  </div> <!-- /content-->
 	  
 	</div> <!-- /page-->
 	
+	<div data-role="page" id="blog">
+	  
+	</div> <!-- /page-->
   </body>
 </html>
