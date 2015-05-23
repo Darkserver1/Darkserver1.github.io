@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+	<title>Darkserver1.github.io</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<!-- <link rel="stylesheet" href="http://nativedroid.godesign.ch/demo/css/jquerymobile.nativedroid.css" />
+	<link rel="stylesheet" href="http://nativedroid.godesign.ch/demo/css/jquerymobile.nativedroid.dark.css" id='jQMnDTheme' />
+	<link rel="stylesheet" href="http://nativedroid.godesign.ch/demo/css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' /> -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<link rel="stylesheet" href="custom.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+	  $(document).on("swiperight",function(){
+	    $("#leftPanel").panel("open");
+	  });
+	</script>
+  </head>
+  <body>
+	
+	<div data-role="page" id="home">
+	  
+	  <div data-role="panel" data-position="left" data-display="overlay" id="leftPanel" data-position="fixed">
+		<a class="ui-btn ui-corner-all ui-shadow" href="#home" data-transition="flip">Home</a>
+	  </div> <!-- /panel-->
+	  
+	  <div data-role="header" data-position="fixed">
+		<h3>Home</h3>
+		<a class="ui-btn ui-btn-icon-left ui-icon-grid" href="#leftPanel">Menu</a>
+	  </div> <!-- /header-->
+	  
+	  <div data-role="body" id="content" class="ui-content">
+		
+		<h3 class="ui-bar ui-bar-a ui-shadow ui-corner-all">News: May 23, 2015</h3>
+		<div class="ui-body">
+		  <span class="pull-left fa fa-newspaper-o fa-3x fa-border"></span>
+          <p>Darkserver1.github.io is launched!</p>
+		</div>
+		<a href="#aboutme" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">About Me Page</a>
+		<a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all">Blogs</a>
+		
+	  </div> <!-- /content-->
+	  
+	</div> <!-- /page-->
+	
+	<div data-role="page" id="aboutme">
+	  
+	  <div data-role="header" data-position="fixed">
+		<h3>About Me</h3>
+		<a class="ui-btn ui-btn-icon-left ui-icon-grid" href="#leftPanel">Menu</a>
+	  </div><!-- /header-->
+	  
+	  <div data-role="main" class="ui-content">
+		
+		<a class="fa fa-twitter fa-5x fa-border" href="https://twitter.com/pierce_manasseh" target="_blank"></a>
+		<br/>
+		<a class="fa fa-github fa-5x fa-border" href="https://github.com/darkserver1" target="_blank"></a>
+		<br/>
+	  </div> <!-- /content-->
+	  
+	</div> <!-- /page-->
+	
+  </body>
+</html>
